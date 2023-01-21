@@ -1,0 +1,59 @@
+// main: ../style.less
+
+.contact {
+    display: flex;
+
+    @media @mobile-sm {
+        flex-wrap: wrap;
+    }
+}
+
+.contact__left {
+    width: 42%;
+    padding: 2rem;
+
+    @media @mobile {
+        padding: 1rem;
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
+}
+
+.contact__right {
+    width: 58%;
+    
+    background: @black url(../img/greenfalls.jpg) center no-repeat;
+
+    @media @mobile-sm {
+        display: none;
+    }
+}
+
+.contact__info {
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+
+    font-size: .94rem;
+    color: @black;
+    font-weight: 300;
+}
+
+.contact__info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .6rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact__info-icon {
+    width: 18px;
+    height: auto;
+
+    margin-right: .8rem;
+}
